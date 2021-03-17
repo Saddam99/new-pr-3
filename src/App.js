@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import One from "./One";
+import Three from "./Three";
+import ParentBlock from "./ParentBlock";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <>
+          <One hours="20" />
+          <Three />
+          <ParentBlock />
+        </>
+    )
 }
 
 export default App;
+
+// задание 2
+// потому что props будет всегда true поэтому выведет "первый день"
